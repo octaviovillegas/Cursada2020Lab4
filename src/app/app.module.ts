@@ -7,12 +7,14 @@ import { BienvenidaComponent } from './componente/bienvenida/bienvenida.componen
 import { LoginComponent } from './componente/login/login.component';
 import { ErrorComponent } from './componente/error/error.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './componentes/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
