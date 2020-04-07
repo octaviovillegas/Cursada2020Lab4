@@ -8,13 +8,21 @@ import { LoginComponent } from './componente/login/login.component';
 import { ErrorComponent } from './componente/error/error.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './componentes/home/home.component';
+import { MenuTipoUnoComponent } from './componentes/navBar/menu-tipo-uno/menu-tipo-uno.component';
+import { MenuTipoDosComponent } from './componentes/navBar/menu-tipo-dos/menu-tipo-dos.component';
+import { ItemsGlobalesComponent } from './componentes/navBar/items-globales/items-globales.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
     LoginComponent,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    MenuTipoUnoComponent,
+    MenuTipoDosComponent,
+    ItemsGlobalesComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

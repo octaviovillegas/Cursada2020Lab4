@@ -3,7 +3,7 @@
 ng g c componentes/navBar/menuTipoUno
 ng g c componentes/navBar/menuTipoDos
 ng g c componentes/navBar/ItemsGlobales
-
+ng g c pages/registro
 
 # RuteoLab4
 
