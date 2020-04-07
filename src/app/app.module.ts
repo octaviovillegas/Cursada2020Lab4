@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './componentes/home/home.component';
 import { MenuNavPrincipalComponent } from './componente/menu-nav-principal/menu-nav-principal.component';
 import { MenuNavDefectoComponent } from './componente/menu-nav-defecto/menu-nav-defecto.component';
+import { ItemsGenericosComponent } from './componentes/navBar/items-genericos/items-genericos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { MenuNavDefectoComponent } from './componente/menu-nav-defecto/menu-nav-
     ErrorComponent,
     HomeComponent,
     MenuNavPrincipalComponent,
-    MenuNavDefectoComponent
+    MenuNavDefectoComponent,
+    ItemsGenericosComponent
   ],
   imports: [
     BrowserModule,
