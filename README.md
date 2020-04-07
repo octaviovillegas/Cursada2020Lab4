@@ -1,3 +1,10 @@
+# Componentes
+
+ng g c componentes/navBar/menuTipoUno
+ng g c componentes/navBar/menuTipoDos
+ng g c componentes/navBar/ItemsGlobales
+
+
 # RuteoLab4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
