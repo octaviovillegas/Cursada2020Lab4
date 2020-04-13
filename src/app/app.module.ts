@@ -12,6 +12,11 @@ import { AdminComponent } from './pages/input/admin/admin.component';
 import { TablaAlumnoComponent } from './pages/input/tabla-alumno/tabla-alumno.component';
 import { DetalleAlumnoComponent } from './pages/input/detalle-alumno/detalle-alumno.component';
 import { FormAlumnoComponent } from './pages/input/form-alumno/form-alumno.component';
+import { FormMateriaComponent } from './pages/input/materia/form-materia/form-materia.component';
+import { DetalleMateriaComponent } from './pages/input/materia/detalle-materia/detalle-materia.component';
+import { TablaMateriaComponent } from './pages/input/materia/tabla-materia/tabla-materia.component';
+import { ListadoMateriaComponent } from './pages/input/materia/listado-materia/listado-materia.component';
+import { ListadoAlumnoComponent } from './pages/input/alumno/listado-alumno/listado-alumno.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +27,12 @@ import { FormAlumnoComponent } from './pages/input/form-alumno/form-alumno.compo
     AdminComponent,
     TablaAlumnoComponent,
     DetalleAlumnoComponent,
-    FormAlumnoComponent
+    FormAlumnoComponent,
+    FormMateriaComponent,
+    DetalleMateriaComponent,
+    TablaMateriaComponent,
+    ListadoMateriaComponent,
+    ListadoAlumnoComponent
   ],
   imports: [
     BrowserModule,

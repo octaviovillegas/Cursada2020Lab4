@@ -8,9 +8,20 @@ import { Alumno } from '../../../clases/alumno';
 })
 export class DetalleAlumnoComponent implements OnInit {
   @Input() alumnoParaMostrar: Alumno ;
-  constructor() { }
+  fotoActual: string;
+  anchoDeFoto: string;
+  constructor() {
+    this.fotoActual = '/assets/imagenes/presentacion.jpg';
+    this.anchoDeFoto = '100%';
+   }
 
   ngOnInit() {
+  }
+  LipiarDetalle()
+  {
+    this.alumnoParaMostrar = null;
+    // tslint:disable-next-line: no-console
+    console.info('objeto', this.alumnoParaMostrar);
   }
 
 }
