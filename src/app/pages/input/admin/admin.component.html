@@ -35,7 +35,7 @@
                 <header>
                     <h1 class="post-title"><a href="#">Listado  {{entidad}} </a></h1>
                     <p class="post-meta"><time class="post-date" datetime="2018-12" pubdate>2018</time> <em>en</em> <a href="#">UTN FRA</a></p>
-                    <button type="button" (click)="CambiarLaVista()" class="btn btn-info btn-circle">{{comoVer}}<i class="fa fa-check"></i></button>
+                    <button type="button" (click)="CambiarLaVista()" [ngClass]="claseDeBoton" class="btn  btn-circle">{{comoVer}}<i class="fa fa-check"></i></button>
                 </header>
                 <hr>
                 <div id="principal" [ngSwitch]="entidad">
@@ -45,7 +45,7 @@
                         <app-listado-alumno *ngIf="comoVer=='Listado'" [listadoAlumnos]="listadoPrincipal" (alumnoSeleccionado)="tomarAlumnoParaDetalles($event)"></app-listado-alumno>
                     </div>
                     <!--mostrar materias-->
-                    |
+
                     <!--  error , no se puede  
                        <app-tabla-materia *ngSwitchCase="'materia'" *ngIf="comoVer=='Tabla'"></app-tabla-materia>
                         <app-listado-materia *ngIf="comoVer=='Tabla'" *ngSwitchCase="'materia'"></app-listado-materia>

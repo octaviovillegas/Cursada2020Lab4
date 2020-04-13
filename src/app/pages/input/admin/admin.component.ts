@@ -15,11 +15,13 @@ export class AdminComponent implements OnInit {
   anchoGif: number;
   rutaDeGif: string;
   comoVer: string;
+  claseDeBoton: string;
   constructor() {
     this.anchoGif = 50;
     this.estado = 'cargado';
     this.entidad = 'alumno';
-    this.comoVer= 'Tabla';
+    this.comoVer = 'Tabla';
+    this.claseDeBoton = 'btn-danger';
     this.rutaDeGif = '/assets/imagenes/ajax-loader.gif';
     // this.profesorParaMostrar= new Profesor("Clementina","Programacion",777);
     this.listadoPrincipal = [
@@ -51,8 +53,10 @@ export class AdminComponent implements OnInit {
     // tslint:disable-next-line: triple-equals
     if (this.comoVer == 'Tabla') {
        this.comoVer = 'Listado';
+       this.claseDeBoton = 'btn-info';
     } else {
        this.comoVer = 'Tabla';
+       this.claseDeBoton = 'btn-danger';
     }
   }
   CambiarEntidad(entidad: string) {
