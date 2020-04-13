@@ -40,7 +40,7 @@
             </header>
             <hr>
             <div id="principal">
-                <app-tabla-alumno></app-tabla-alumno>
+                <app-tabla-alumno [listadoAlumnos]="listadoPrincipal" (alumnoSeleccionado)="tomarAlumnoParaDetalles($event)"></app-tabla-alumno>
                 <!--app-listado-alumnos [listadoAlumnos]="listadoPrincipal"    (alumnoSeleccionado)="tomarAlumnoParaDetalles($event)"></app-listado-alumnos-->
                 <!--app-listado-profesor [listadoProfesores]="ListadoProfesoresPrincipal"  (profesorSeleccionado)="tomarProfesorParaDetalles($event)"></app-listado-profesor-->
 
@@ -65,7 +65,7 @@
             <h4 class="widgettitle">Alta </h4>
             <div id="informe">
 
-                <app-form-alumno> </app-form-alumno>
+                <app-form-alumno (alumnoCreado)="tomarAlumnoCreado($event)"> </app-form-alumno>
                 <!--app-alumno (alumnoCreado)="tomarAlumnoCreado($event)"></app-alumno-->
                 <!--app-profesor (SeCreoUnProfesor)="mostrarProfesor($event)"></app-profesor-->
 
@@ -75,7 +75,7 @@
         <section class="widget clearfix">
             <h4 class="widgettitle">Detalle </h4>
             <div id="error">
-
+                <app-detalle-alumno [alumnoParaMostrar]="alumnoSeleccionado"></app-detalle-alumno>
                 <!--app-detalle-alumnos [alumnoParaMostrar]="alumnoSeleccionado"    > </app-detalle-alumnos-->
                 <!--app-detalle-profesor [unProfesor]="profesorParaMostrar"></app-detalle-profesor-->
             </div>
