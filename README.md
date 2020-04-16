@@ -1,12 +1,29 @@
 ng g c /pages/input/admin
+
+
 ng g c /pages/input/alumno/formAlumno
+
+
 ng g c /pages/input/alumno/detalleAlumno
+
+
 ng g c /pages/input/alumno/tablaAlumno
+
+
 ng g c /pages/input/alumno/listadoAlumno
+
+
 ng g c /pages/input/materia/formMateria
+
+
 ng g c /pages/input/materia/DetalleMateria
+
+
 ng g c /pages/input/materia/tablaMateria
+
 ng g c /pages/input/materia/listadoMateria
+
+
 ng g module /pages/input/ModuloInputOutPut
 
 ngStyle
