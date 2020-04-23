@@ -19,14 +19,24 @@ import { ListadoMateriaComponent } from './pages/input/materia/listado-materia/l
 import { ListadoAlumnoComponent } from './pages/input/alumno/listado-alumno/listado-alumno.component';
 */
 import { ModuloInputOutPutModule } from './pages/input/modulo-input-out-put/modulo-input-out-put.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// Angular Material
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
+import { GrillaUsuarioComponent } from './page/material/grilla-usuario/grilla-usuario.component';
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
     LoginComponent,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    GrillaUsuarioComponent
     /*AdminComponent,
     TablaAlumnoComponent,
     DetalleAlumnoComponent,
@@ -41,7 +51,14 @@ import { ModuloInputOutPutModule } from './pages/input/modulo-input-out-put/modu
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ModuloInputOutPutModule
+    ModuloInputOutPutModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatTableModule,
+    MatIconModule
 
   ],
   providers: [],
